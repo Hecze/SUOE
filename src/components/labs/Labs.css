@@ -1,0 +1,177 @@
+:root {
+  --color--rojo: #ff5757;
+  --color--verde: #97fa74;
+  --color--amasuave: #f7f7eb;
+  --color--borde--suave: #666061;
+}
+
+.labs-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #66606105;
+}
+
+.container-labs {
+  margin-top: 10rem;
+}
+
+.labs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  width: 50rem;
+  gap: 1rem;
+  margin: 3rem 0;
+  margin-bottom: 5rem;
+}
+
+.labs .lab {
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  width: 5rem;
+  border-radius: 2px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.labs .lab:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.808);
+}
+
+.labs .lab.disponible {
+  background-color: var(--color--verde);
+}
+
+.labs .lab.ocupado {
+  background-color: var(--color--rojo);
+}
+
+.lab-data {
+  margin-top: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+
+  background-color: var(--color--amasuave);
+
+  height: 29.9rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border: 3px solid var(--color--borde--suave);
+}
+
+.lab-data .header {
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  margin-bottom: 7%;
+  margin-top: -7%;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.lab-data .header .ocupado {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color--rojo);
+  margin-top: 0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lab-data .header .disponible {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color--verde);
+  margin-top: 0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lab-data .body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.lab-data .body .perfil img {
+  width: 13rem;
+  height: 13rem;
+  border: 3px solid var(--color--borde--suave);
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.lab-data .body .data {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lab-data .body .data p {
+  background-color: rgba(0, 139, 139, 0.103);
+  padding: 1rem;
+  border: 3px solid var(--color--borde--suave);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  min-width: 150px;
+  min-height: 18px;
+  text-align: center;
+}
+
+.editar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #00669f;
+  color: #f7f7eb;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 20rem;
+  margin-bottom: -10rem;
+  margin-top: 3rem;
+  margin-left: -12rem;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background-color: #004d75;
+  transform: scale(1.05);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.603);
+}

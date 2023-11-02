@@ -1,0 +1,92 @@
+:root{
+  --color--sangre: #621518;
+  --color--sangre--oscura: #321E1F;
+}
+
+.navbar {
+  background-color: var(--color--sangre);
+  color: #fff;
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  right: 0;
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar::before{ 
+  content: '';
+  position: absolute;
+  top: 5.5rem;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  background-color: var(--color--sangre--oscura);
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.navbar .logo{
+  width: 25%;
+  height: 3rem;
+  margin-right: 2rem;
+  position: absolute;
+  top: 1.2rem;
+
+}
+
+.navbar .logo#fisi{
+  left: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar .logo#fisi img{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.navbar .logo#fisi h2{
+  margin-top: .4rem;
+  color: #FFF;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Ruda;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 525;
+line-height: normal;
+}
+
+.navbar .logo#unmsm{
+  left: 85%;
+}
+
