@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Labs.css";
+import Image from "next/image";
 
 function Labs() {
   const [antiguoPabellon, setAntiguoPabellon] = useState([]);
