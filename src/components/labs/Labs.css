@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap');
+
+
 :root {
   --color--rojo: #ff5757;
   --color--verde: #97fa74;
@@ -15,6 +18,8 @@
   width: 100%;
   height: 100%;
   background-color: #66606105;
+  font-family: "Ruda", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .container-labs {
@@ -79,8 +84,7 @@
   width: 100%;
   height: 20%;
   border-radius: 5px;
-  margin-bottom: 7%;
-  margin-top: -7%;
+  margin-top: 0;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -100,7 +104,6 @@
   width: 100%;
   height: 100%;
   background-color: var(--color--verde);
-  margin-top: 0;
   border-radius: 5px;
   text-align: center;
   display: flex;
@@ -128,7 +131,7 @@
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .lab-data .body .data p {
@@ -162,6 +165,8 @@
 }
 
 button {
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
